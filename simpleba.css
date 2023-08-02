@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 130%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    
+}
+
+.navlist{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+
+}
+.navlist li{
+    list-style: none;
+}
+.navlist img{
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 150px;
+    margin: 4px;
+}
+.navlist li a{
+    padding: 26px 30px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    display: inline-block;
+
+
+}
+.navlist li a:hover{
+    color: aqua;
+    padding: 26px 30px;
+    display: flex;
+    
+}
+.rightNav{
+    max-width: 50%;
+    text-align: right;
+
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2p solid green;
+    border-radius: 9px;
+    padding: 0 23px;
+}
+.background{
+    background: rgba(0,0,0,0.7) url('iit-delhi.jpg');
+    background-size: cover;
+    background-blend-mode:darken;
+}
+.firstsection{
+    height: 100vh;
+
+}
+.box-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 50%;
+        margin: auto;
+        height: 75%;
+        
+    
+}
+.firsthalf{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.firsthalf .buttons a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+} 
+.secondhalf{
+    width: 50%;
+
+}
+.secondhalf img{
+    width: 100%;
+    border-radius: 25px;
+    width: 250px;
+    background-color:white;
+
+}
+.text-big{
+    font-size: 30px;
+
+}
+.text-small{
+font-size: 15px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 8px 3px;
+    border:2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+
+}
+.btn-dark{
+    color: black;
+    border:gray 2px solid;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+.section-left{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+.left{
+    flex-direction: row-reverse;
+}
+.paras{
+    padding: 0px 65px;
+
+}
+.sectiontag{
+    padding: 16px 0;
+}
+.sectionsubtag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img{
+    width: 150px;
+    border: 2px solid black;
+    border-radius:26px;
+    margin-top: 19px;
+    padding: 10px;
+}
+.thumbnail img:hover{
+   background-color: rgb(15, 220, 118);
+
+}
+.contact{
+    background-color: gray;
+    height: 600px;
+    font-size: 35px;
+
+}
+.text-center{
+
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+
+}
+.form{
+    max-width: 62%;
+    margin: 25px auto;
+
+}
+.form input{
+    width: 100%;
+    font-size: 19px;
+    border-radius: 6px;
+    border: 2px solid gray;
+    margin: 12px 0;
+    padding: 5px 3px;
+}
+.btn-dark{
+    border: 2px solid black;
+    border-radius: 25px;
+    color:white;
+    background-color: black;
+}
+.text-footer{
+    text-align: center;
+    padding: 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+  
+
+}
+.burger{
+    position:absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+
+}
+
+@media only screen and (max-width:1120px)
+{
+    .navlist{
+        flex-direction: column;
+    }
+    .navbar {
+        flex-direction: column;
+        transform: all 0.7s ease-out;
+        height: 470px;
+       
+    }
+    .rightNav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: none;
+
+    }
+    .h-nav-resp{
+        height: 22px;
+    }
+    .v-class-resp{
+        opacity: 0;
+        color: white;
+
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+        
+    }
+    .paras{
+        padding: 0px;
+    }
+    .line{
+        width: 33px;
+        background-color: white;
+        height: 4px;
+        margin: 5px;
+    }
+}
