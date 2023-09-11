@@ -238,24 +238,6 @@ font-size: 15px;
     display: none;
 
 }
-.line1{
-    width: 33px;
-    background-color: white;
-    height: 4px;
-    margin: 5px 5px;
-}
-.line2{
-    width: 33px;
-    background-color: white;
-    height: 4px;
-    margin: 5px 5px;
-}
-.line3{
-    width: 33px;
-    background-color: white;
-    height: 4px;
-    margin: 5px 5px;
-}
 
 
 @media only screen and (max-width:1300px)
@@ -319,4 +301,25 @@ font-size: 15px;
     .paras{
         padding: 0px;
     }
+    .line1{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 5px;
+
+    }
+    .line2{
+        width: 33px;
+        background-color: white;
+        height: 4px;
+        margin: 5px 5px;
+        
+        }
+    .line3{
+        width: 33px;
+        background-color: white;
+        height: 4px;
+        margin: 5px 5px;
+            
+        }
 }
