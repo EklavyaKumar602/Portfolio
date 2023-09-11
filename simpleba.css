@@ -44,7 +44,7 @@
     text-decoration: none;
     display: flex;
     list-style: none;
-    display: inline-block;
+
 
 
 }
@@ -59,12 +59,23 @@
     text-align: right;
 
 }
+.rightNav input{
+    height: 30px;
+}
+.rightNav .btn-sm{
+    height: 33px;
+    border-radius: 9px;
+    border: 2px solid white;
+    padding: 10px,10px,10px,10px;
+    background-color: transparent;
+    color: white;
+
+}
 #search{
-    padding: 5px;
     font-size: 17px;
-    border: 2p solid green;
     border-radius: 9px;
     padding: 0 23px;
+    
 }
 .background{
     background: rgba(0,0,0,0.7) url('iit-delhi.jpg');
@@ -227,20 +238,29 @@ font-size: 15px;
     display: none;
 
 }
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
 
-@media only screen and (max-width:1120px)
+@media only screen and (max-width:1300px)
 {
     .navlist{
         flex-direction: column;
+        text-align: center;
     }
     .navbar {
         flex-direction: column;
-        transform: all 0.7s ease-out;
+        transition: all 0.7s ease-out;
         height: 470px;
        
     }
     .rightNav{
+        flex-direction: column;
         text-align: center;
+       
     }
     .box-main{
         flex-direction: column-reverse;
@@ -249,9 +269,14 @@ font-size: 15px;
     }
     #search{
         width: 100%;
+        
+    }
+    .btn-sm{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .burger{
-        display: none;
+        display: block;
 
     }
     .h-nav-resp{
