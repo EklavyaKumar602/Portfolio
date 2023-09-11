@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="simpleba.css">
-   
     <title>Simple Me Education Online</title>
 </head>
-
 <body>
     <nav class="navbar background h-nav-resp">
         <ul class="navlist v-class-resp">
@@ -21,18 +18,19 @@
         <div class="rightNav v-class-resp">
             <input type="text" name="search" id="search" placeholder="Search Now">
             <button class="btn-sm">Search</button>
-            
         </div>
+        <div class="burger">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
+    </div>
     </nav>
     <section class="background firstsection">
         <div class="box-main">
             <div class="firsthalf">
                 <p class="text-big">The Future of Education is here</p>
                 <p class="text-small">In this world of 7 billion people we need to educate all of them .This is the future </p>
-                <div class="buttons" >
+                <div class="buttons">
                     <button class="btn"><a href="https://www.youtube.com/@PassionCoding">Subscribe</a></button>
                     <button class="btn"><a href="https://www.youtube.com/@PassionCoding"> Watch Video</a>  </button>
                 </div>
@@ -131,9 +129,11 @@
 </footer>
 <script class="stylesheet/javascript">
 burger=document.querySelector('.burger')
-navlist=document.querySelector('v-class-resp')
+navlist=document.querySelector('.navlist')
 navbar=document.querySelector('.navbar')
 rightNav=document.querySelector('.rightNav')
+
+
 burger.addEventListener('click',()=>{
     rightNav.classList.toggle('v-class-resp')
     navlist.classList.toggle('v-class-resp')
