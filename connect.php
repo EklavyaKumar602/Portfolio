@@ -6,7 +6,7 @@ $message=$_POST['opinion'];
 $to="cs901934@gmail.com";
 $subject="Mail From Website";
 $txt="Name = ".$name ."\r\n Mob =". $mob ."\r\n Email =" . $email ."\r\n Message =".$message;
-$headers = "From : Your Portfolio ";
+$headers = "From : noreply@chhotu602.github.io/Portfolio/ "."\r\n"."CC: somebodyelseportfolio";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
