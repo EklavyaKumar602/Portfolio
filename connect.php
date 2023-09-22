@@ -1,12 +1,12 @@
 <?php
-$name=$_POST['name'];
-$mob=$_POST['number'];
-$email=$_POST['email'];
-$message=$_POST['opinion'];
+$name=$_REQUEST['name'];
+$mob=$_REQUEST['number'];
+$email=$_REQUEST['email'];
+$message=$_REQUEST['opinion'];
 $to="cs901934@gmail.com";
 $subject="Mail From Website";
 $txt="Name = ".$name ."\r\n Mob =". $mob ."\r\n Email =" . $email ."\r\n Message =".$message;
-$headers = "From : noreply@chhotu602.github.io/Portfolio/ "."\r\n"."CC: somebodyelseportfolio";
+$headers = "From : Your Portfolio ";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
