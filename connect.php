@@ -1,5 +1,5 @@
 <?php
-if(isset($_REQUEST['esubmit'])){
+if(isset($_GET['esubmit'])){
 $name=$_REQUEST['name'];
 $mob=$_REQUEST['number'];
 $email=$_REQUEST['email'];
