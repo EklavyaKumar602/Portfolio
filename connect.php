@@ -11,5 +11,5 @@ if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
 
-header("Location:thankyou.html");
+header("thankyou.html");
 ?>
