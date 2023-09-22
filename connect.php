@@ -1,9 +1,9 @@
 <?php
-if(isset($_POST['esubmit'])){
-$name=$_POST['name'];
-$mob=$_POST['number'];
-$email=$_POST['email'];
-$message=$_POST['opinion'];
+if(isset($_REQUEST['esubmit'])){
+$name=$_REQUEST['name'];
+$mob=$_REQUEST['number'];
+$email=$_REQUEST['email'];
+$message=$_REQUEST['opinion'];
 $to="cs901934@gmail.com";
 $subject="Mail From Website";
 $txt="Name = ".$name ."\r\n Mob =". $mob ."\r\n Email =" . $email ."\r\n Message =".$message;
