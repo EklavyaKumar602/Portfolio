@@ -12,5 +12,5 @@ $headers = "From : Your Portfolio ";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
-header("https://github.com/Chhotu602/Portfolio/blob/main/thankyou.html");
+header("location:thankyou.html");
 ?>
