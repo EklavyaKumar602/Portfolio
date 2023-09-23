@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['esubmit'])){
+if($_SERVER["REQUEST_METHOD"] == "POST"){
 $name=$_POST['uname'];
 $mob=$_POST['number'];
 $email=$_POST['email'];
@@ -8,13 +8,12 @@ $from="cs901934@gmail.com";
 $subject="Mail From Website";
 $txt="Name = ".$name ."\r\n Mob =". $mob ."\r\n Email =" . $email ."\r\n Message =".$message;
 $headers = "From : Your Portfolio : $form";
-if($email!=NULL){
-    mail($to,$subject,$txt,$headers);
+if(mail($to,$subject,$txt,$headers)){
     echo"Mail Sent";
 }
 else{
-    echo "Mail Not Send Successfully";
+    echo "Oops! Something went wrong";
 }
-header("Location:thankyou.html");
+echo"Thanks for Contacting Us.";
 }
 ?>
