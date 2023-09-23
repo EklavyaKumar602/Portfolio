@@ -1,10 +1,9 @@
 <?php
 if(isset($_POST['esubmit'])){
-$name=$_REQUEST['name'];
-$mob=$_REQUEST['number'];
-$email=$_REQUEST['email'];
-$message=$_REQUEST['opinion'];
-$con=mysqli_connect('cs901934@gmail.com');
+$name=$_POST['name'];
+$mob=$_POST['number'];
+$email=$_POST['email'];
+$message=$_POST['opinion'];
 $to="cs901934@gmail.com";
 $subject="Mail From Website";
 $txt="Name = ".$name ."\r\n Mob =". $mob ."\r\n Email =" . $email ."\r\n Message =".$message;
@@ -15,5 +14,5 @@ if($email!=NULL){
 else{
     echo "Mail Not Send Successfully";
 }
-header("location:thankyou.html");
+header("Location:thankyou.html");
 ?>
