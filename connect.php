@@ -15,4 +15,5 @@ else{
     echo "Mail Not Send Successfully";
 }
 header("Location:thankyou.html");
+}
 ?>
