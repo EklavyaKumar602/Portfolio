@@ -111,7 +111,7 @@
     color: white;
 } 
 .firsthalf .buttons btn:hover{
-    background:black;
+   background-color: black;
 }
 .secondhalf{
     width: 50%;
