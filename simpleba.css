@@ -110,6 +110,11 @@
     text-decoration: none;
     color: white;
 } 
+.firsthalf .buttons btn a:hover{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
 .secondhalf{
     width: 50%;
 
