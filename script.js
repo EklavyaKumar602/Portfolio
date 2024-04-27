@@ -3,7 +3,8 @@ gsap.from(".logo",{
     duration:2,
     delay:1,
     rotate:360,
-    yoyo:true,
-    scale:0
+    scale:0,
+    yoyo:true
+   
     
 })
