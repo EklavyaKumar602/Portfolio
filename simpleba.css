@@ -110,7 +110,7 @@
     text-decoration: none;
     color: white;
 } 
-.firsthalf .buttons btn:hover{
+.firsthalf .buttons .btn:hover{
    background-color: black;
 }
 .secondhalf{
