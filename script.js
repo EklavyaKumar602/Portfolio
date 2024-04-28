@@ -7,7 +7,7 @@ gsap.from(".logo",{
     yoyo:true
 })
 const scroll = new LocomotiveScroll({
-    el: document.querySelector(''),
+    el: document.querySelector('.background .firstsection'),
     smooth: true,
     lerp:0.03
 });
