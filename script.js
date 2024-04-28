@@ -5,11 +5,9 @@ gsap.from(".logo",{
     rotate:360,
     scale:0,
     yoyo:true
-   
-    
 })
 const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
+    el: document.querySelector(''),
     smooth: true,
     lerp:0.03
 });
