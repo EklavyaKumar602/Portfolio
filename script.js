@@ -9,5 +9,5 @@ gsap.from(".logo",{
 const scroll = new LocomotiveScroll({
     el: document.querySelector('html,body'),
     smooth: true,
-    lerp:0.03
+    lerp:0.02
 });
